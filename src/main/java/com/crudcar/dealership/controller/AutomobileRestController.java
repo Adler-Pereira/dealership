@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/automobiles")
-public class AutomobileController {
+public class AutomobileRestController {
 
     @Autowired
     AutomobileService automobileService;

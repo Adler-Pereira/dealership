@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar novo automóvel</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <form th:action="@{/automobiles/new}" th:object="${automobile}" method="post">
+        <div>
+            <label>Número do chassi:</label>
+            <input type="text" th:field="*{chassiNumber}">
+        </div>
+        <div>
+            <label>Montadora:</label>
+            <input type="text" th:field="*{manufacturer}">
+        </div>
+        <div>
+            <label>Modelo:</label>
+            <input type="text" th:field="*{model}">
+        </div>
+        <div>
+            <label>Ano:</label>
+            <input type="number" th:field="*{year}">
+        </div>
+        <div>
+            <label>Cor:</label>
+            <input type="text" th:field="*{color}">
+        </div>
+        <div>
+            <label>Quilômetragem:</label>
+            <input type="number" th:field="*{kilometer}">
+        </div>
+        <div>
+            <input type="submit" value="salvar">
+        </div>
+    </form>
+    <a th:href="list">Lista de Automóveis</a>
+</body>
+</html>

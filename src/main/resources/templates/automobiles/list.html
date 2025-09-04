@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Automóveis</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <table border="1px">
+        <thead>
+            <th>ID</th>
+            <th>Número do Chassi</th>
+            <th>Montadora</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            <th>Quilômetragem</th>
+        </thead>
+        <tbody>
+            <tr th:each="auto : ${listAuto}">
+                <td th:text="*{auto.id}"></td>
+                <td th:text="*{auto.chassiNumber}"></td>
+                <td th:text="*{auto.manufacturer}"></td>
+                <td th:text="*{auto.model}"></td>
+                <td th:text="*{auto.year}"></td>
+                <td th:text="*{auto.color}"></td>
+                <td th:text="*{auto.kilometer}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <a th:href="new">Novo automóvel</a>
+    </div>
+</body>
+</html>
