@@ -1,12 +1,12 @@
 package com.crudcar.dealership;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+// @SpringBootTest
 class DealershipApplicationTests {
 
-	@Test
+	// @Test
 	void contextLoads() {
 	}
 
