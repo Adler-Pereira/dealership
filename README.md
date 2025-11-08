@@ -1,2 +1,2 @@
-# dealership
+# dealership (concessionária)
 Projeto de estudos Thymeleaf de uma concessionária em desenvolvimento...
